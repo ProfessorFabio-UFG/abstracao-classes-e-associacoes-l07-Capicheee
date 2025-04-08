@@ -9,6 +9,7 @@ public class Main {
 
         compositor[0] = new Compositor("Monêt", "Francês");
         compositor[1] = new Compositor("Bjhorn", "Russo");
+        compositor[2] = new Compositor("Miku", "Japonesa");
 
         Compositor comps[] = new Compositor[2];
         comps[0] = compositor[0];
@@ -17,6 +18,13 @@ public class Main {
         musicas[0] = new Musica("Le festin", 2004, "Clássica", comps);
 
         System.out.println(musicas[0].toString());
+
+        comps[0] = compositor[2];
+        comps[1] = null;
+
+        musicas[1] = new Musica("COLORS", 2014, "Jpop", comps);
+
+        System.out.println(musicas[1].toString());
 
         sc.close();
     }
